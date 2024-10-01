@@ -1,7 +1,5 @@
-export default function createEmployeesObject(departmentName, employees) {
-  return { [departmentName]: [...employees] };
-}
 
-const employee = {...createEmployeesObject('computer sci', ['jake', 'micheal']),
-				  ...createEmployeesObject('masscom', ['mark', 'zuker'])};
-console.log(employee);
+const obj = {jake: 'me', drkae:'see'};
+for (const i of obj){
+		console.log(obj);
+}
