@@ -7,4 +7,5 @@ export default function handleProfileSignup() {
     console.log(`${photo.body} ${user.firstName} ${user.lastName}`);
   });
   prom.catch(() => console.log('Signup system offline'));
+  return prom;
 }
