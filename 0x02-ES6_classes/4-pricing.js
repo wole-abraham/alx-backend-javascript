@@ -41,11 +41,10 @@ export default class Pricing {
     return `${this._amount} ${this._currency.displayFullCurrency()}`; // eslint-disable-line no-underscore-dangle
   }
 
-  static covertPrice(amount, conversionRate) {
-    if (typeof (amount) !== 'number' && typeof (conversionRate) !== 'number') {
-      throw TypeError('Amount and conversionrate must be a number');
-    } else {
-      return amount * conversionRate;
+  static convertPrice(amount, conversionRate) {
+    if (typeof (amount) !== 'number' || typeof (conversionRate) !== 'number') {
+      throw new TypeError('Amount and conversionrate must be a number');
     }
+    return amount * conversionRate;
   }
 }
