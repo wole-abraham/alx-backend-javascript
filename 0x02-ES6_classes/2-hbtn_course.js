@@ -20,6 +20,8 @@ export default class HolbertonCourse {
           this._students = students; // eslint-disable-line no-underscore-dangle
         }
       }
+    } else {
+      throw new TypeError('Students must be an array of strings');
     }
   }
 
