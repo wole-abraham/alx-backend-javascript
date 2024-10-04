@@ -7,7 +7,7 @@ export default class Building {
     this._sqft = sqft; // eslint-disable-line no-underscore-dangle
 
     if (this.constructor.name !== 'Building') {
-      if (!this.constructor.evacuationWarningMessage) {
+      if (typeof this.evacuationWarningMessage !== 'function') {
         throw new Error('Class extending Building must override evacuationWarningMessage');
       }
     }
