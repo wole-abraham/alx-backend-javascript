@@ -1,5 +1,11 @@
-
+ 
+	  const _brand = Symbol('brand');
+		  const _motor = Symbol('motor');
+		  const _color = Symbol('color');
 export default class Car {
+	
+
+
   constructor(brand, motor, color) {
     // Validate that brand and motor are strings, and color is a string
     if (typeof brand !== 'string') {
@@ -11,16 +17,17 @@ export default class Car {
     if (typeof color !== 'string') {
       throw new TypeError('Color must be a string');
     }
-
-    this._brand = brand;  // Store brand as a symbol
-    this._motor = motor;  // Store motor as a symbol
-    this._color = color;  // Store color as a symbol
+		 		  
+    this[_brand] = brand;  // Store brand as a symbol
+    this[_motor] = motor;  // Store motor as a symbol
+    this[_color] = color;  // Store color as a symbol
   }
 
   // Method to clone the current car object
-  cloneCar() {
+  cloneCar() 
+		{
+				return new Car(this[_brand], this[_motor], this[_color]);
 
-    return this;
   }
 
   // Optional: Getters to access private properties
