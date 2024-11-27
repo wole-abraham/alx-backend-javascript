@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Clinic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navbar styling */
+        .navbar-nav .nav-link {
+            font-weight: normal;
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('wavy.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        /* Section Heading */
+        .section-heading {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+        /* Offer Cards */
+        .offer-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Products Cards */
+        .product-card img {
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="bg-light py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="logo.png" alt="Beauty Clinic Logo" class="rounded-circle" style="width: 60px; height: 60px;">
+                    <span style="font-weight: normal;">Mary Nassif Chbat</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offers">Offers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#products">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero text-center">
+        <div class="container">
+            <h2 class="display-4">Enhancing Your Natural Beauty</h2>
+            <p class="lead">Professional beauty treatments for every skin type and need</p>
+            <a href="appointment.html" class="btn btn-light">Book an Appointment</a>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Special Offers</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="offer-card">
+                        <h5>Facial Glow Package</h5>
+                        <p>Get 20% off on facial treatments this month!</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="offer-card">
+                        <h5>Holiday Manicure & Pedicure</h5>
+                        <p>Combo package at just $50. Limited time offer.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="offer-card">
+                        <h5>Free Consultation</h5>
+                        <p>Book a service and get a free skin consultation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-heading">Our Products</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="product-card">
+                        <img src="product1.jpg" class="img-fluid" alt="Product 1">
+                        <h5>Glow Face Cream</h5>
+                        <p>Hydrate your skin with our natural glow cream.</p>
+                        <button class="btn btn-outline-primary btn-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="product2.jpg" class="img-fluid" alt="Product 2">
+                        <h5>Relaxing Body Oil</h5>
+                        <p>Perfect for massages and daily hydration.</p>
+                        <button class="btn btn-outline-primary btn-sm">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="product-card">
+                        <img src="product3.jpg" class="img-fluid" alt="Product 3">
+                        <h5>Organic Nail Polish</h5>
+                        <p>Non-toxic and long-lasting nail polish in vibrant colors.</p>
+                        <button class="btn btn-outline-primary btn-sm">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Facial Treatments</h5>
+                    <p>Rejuvenate your skin with our professional facials.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Pedicure</h5>
+                    <p>Relax with our soothing pedicure services.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Manicure</h5>
+                    <p>Beautifully groomed hands with our expert manicures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="section-heading">Contact Us</h2>
+            <form action="#">
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control mb-3" placeholder="Your Name">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control mb-3" placeholder="Your Email">
+                    </div>
+                </div>
+                <textarea class="form-control mb-3" placeholder="Your Message" rows="4"></textarea>
+                <button type="submit" class="btn btn-light">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Beauty Clinic. All Rights Reserved.</p>
+        <p>
+            <a href="https://www.facebook.com" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.twitter.com" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
