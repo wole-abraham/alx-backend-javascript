@@ -1,3 +1,10 @@
-const displayMessage = require('./0-console');
+const fs = require('fs');
 
-displayMessage('Hello NodeJS!');
+console.log('hi');
+const data = fs.readFileSync('database.csv', {
+  encodingg: 'utf-8',
+  flag: 'r',
+});
+
+
+console.log(data.toString().split('\n'));
